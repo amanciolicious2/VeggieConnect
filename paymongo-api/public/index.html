@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayMongo API - VeggieConnect</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .status {
+            padding: 10px;
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .endpoint {
+            background: #f5f5f5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .method {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #2196f3;
+            color: white;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🥬 PayMongo API</h1>
+        <p>VeggieConnect Payment Processing API</p>
+        
+        <div class="status">
+            ✅ API is running and ready to accept requests
+        </div>
+
+        <h2>Available Endpoints</h2>
+        
+        <div class="endpoint">
+            <span class="method">POST</span>
+            <code>/api/createCheckoutSession</code>
+            <p style="margin: 10px 0 0 0; color: #666;">Create a PayMongo checkout session</p>
+        </div>
+
+        <div class="endpoint">
+            <span class="method">POST</span>
+            <code>/api/paymongoWebhook</code>
+            <p style="margin: 10px 0 0 0; color: #666;">Handle PayMongo webhook events</p>
+        </div>
+
+        <div class="endpoint">
+            <span class="method">POST</span>
+            <code>/api/completeOrder</code>
+            <p style="margin: 10px 0 0 0; color: #666;">Complete order processing</p>
+        </div>
+
+        <h2>Testing</h2>
+        <p>To test the API, make a POST request to any of the endpoints above.</p>
+        <p><strong>Note:</strong> The root URL shows this page. API endpoints are available at <code>/api/*</code> paths.</p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+{
+  "name": "veggieconnect-functions",
+  "private": true,
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "deploy-auto-approve": "firebase deploy --only functions --approve-within 5mins"
+  },
+  "dependencies": {
+    "firebase-functions": "^4.8.2",
+    "firebase-admin": "^12.5.0",
+    "axios": "^1.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
